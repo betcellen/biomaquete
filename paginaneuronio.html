@@ -67,7 +67,7 @@
             border-radius: 8px;
         }
 
-        .media-container img, .media-container video {
+        .media-container img, .media-container iframe {
             width: 48%; /* Ajuste para que a imagem e o vídeo compartilhem o mesmo espaço */
             height: auto;
             border-radius: 8px;
@@ -132,8 +132,11 @@
             margin-top: 30px;
         }
 
-        .video-container video {
+        .video-container iframe {
             width: 80%; /* Ajuste o tamanho do vídeo conforme necessário */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -152,7 +155,12 @@
     <!-- Galeria de fotos e vídeos dentro da mesma caixa branca -->
     <section class="media-container">
         <img src="img/WhatsApp Image 2024-12-07 at 17.02.21.jpeg" alt="Maquete de Neurônio 1">
-        <iframe src="https://www.youtube.com/embed/IPbYQOHvMr4?si=DMpFkIOWQpdTWwgt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/IPbYQOHvMr4?si=DMpFkIOWQpdTWwgt" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
     </section>
     <p>Foto e vídeo da maquete de neurônios e sinapses</p>
     <br>
@@ -193,9 +201,13 @@
 
     <!-- Vídeo centralizado -->
     <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/hvgGyiyyy4M?si=nTlPXybBpU8Ospmd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-        
+        <iframe src="https://www.youtube.com/embed/hvgGyiyyy4M?si=nTlPXybBpU8Ospmd" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
+    </div>
 
     <!-- Rodapé -->
     <footer>
